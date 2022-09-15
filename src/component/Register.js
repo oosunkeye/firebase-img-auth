@@ -31,9 +31,6 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
     if (!userName.trim() || userName.length < 6) {
       setErrFound(true);
       errMsg.errUser = "Please enter an invalid email";
